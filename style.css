@@ -1,0 +1,351 @@
+/* Reset padding and margin for all elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Section */
+#header {
+    background-image: url(images/2.png); /* Set background image */
+    height: 80vh; /* Set height to 80% of the viewport height */
+    background-size: cover; /* Cover the container with the background image */
+    background-position: center; /* Center the background image */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Align items vertically */
+    height: 30%;
+    justify-content: flex-end; /* Align menu items to the right */
+    gap: 10px; /* Reduce space between logo and menu */
+    background-color: #31353D; /* Dark background color */
+    padding: 1rem;         /* Reduced padding for a smaller height */
+    min-height: 50px;          /* Set minimum height */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+
+}
+
+/* Navbar link styles */
+.navbar-nav li a {
+    float: right; /* Align navbar links to the right */
+    margin-right: 10px; /* Add margin to the right */
+    color: #fff !important; /* Set text color to white */
+    font: 1em sans-serif; font-size: 14px;            /* Smaller font size */
+    padding: 8px 12px;          /* Compact padding */
+    transition: color 0.3s ease;
+    font-size: 14px; 
+}
+
+/* Navbar container styles */
+.navbar-nav {
+    border: 2px solid #FCBCB2; /* Light pink border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Add some padding */
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #fff !important; /* Set text color to white */
+}
+
+/* Navbar brand logo styles */
+.navbar-brand img {
+    width: 135px;              /* Smaller logo size */
+    height: auto;
+    margin-left: 30px;         
+}
+
+/* Navbar toggler button for mobile */
+.navbar-toggler {
+    border: #fff solid !important; /* White border for the toggler button */
+    position: absolute;
+    right: 10px; /* Position at the right of the screen */
+    top: 15px; /* Position 15px from the top */
+}
+
+nav .fa-bars {
+    color: #fcbcb2; /* Set color for the bars icon */
+    font-size: 26px; /* Set the font size */
+}
+
+/* Media query for larger screens, hiding the toggler */
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none; /* Hide the toggler for larger screens */
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .navbar-nav li a {
+        padding: 10px;
+        font-size: 14px; /* Reduce font size on mobile */
+    }
+    
+    .navbar-brand img {
+        width: 120px; /* Resize logo for mobile */
+    }
+}
+
+/* Welcome Section */
+.welcome {
+    padding: 50px 100px;
+    margin-top: -140px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.15); /* Add box shadow */
+}
+
+.welcome h1 {
+    font-size: 26px; /* Set font size */
+    color: #111; /* Set text color */
+}
+
+.welcome .home-btn {
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 30px; /* Rounded corners */
+    color: #fff; /* White text */
+    background-color: #fcbcb2; /* Background color */
+    border: none; /* No border */
+    transition: 0.3s; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.welcome .btn:focus {
+    box-shadow: none; /* Remove focus outline */
+}
+
+.welcome .home-btn:hover {
+    color: #fff;
+    background-color: #E38576; /* Change background color on hover */
+}
+
+/* About Section */
+#about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#about .col-md-6 {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+
+/* Video container */
+.video-container {
+    width: 100%;
+    height: 80vh; /* Match the height of the image */
+    overflow: hidden; /* Hide overflowed content */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container */
+}
+
+/* About heading and paragraph */
+#about h3 {
+    margin: 20px auto;
+    margin-bottom: 15px;
+    font-weight: bold; /* Bold heading */
+}
+
+#about p {
+    margin-bottom: 20px;
+    font-size: 16px; /* Set font size */
+    line-height: 1.6; /* Set line height for readability */
+}
+
+/* Services Section */
+#services {
+    padding: 100px 0;
+}
+
+#services .col-md-4 {
+    text-align: center; /* Center text */
+    padding: 20px;
+}
+
+#services .col-md-4 img {
+    width: 70px; /* Set image width */
+    margin-bottom: 15px; /* Add bottom margin */
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 100px 0;
+}
+
+#testimonials .col-md-4 {
+    padding: 10px 30px;
+}
+
+#testimonials img {
+    width: 75%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 30px;
+    border: 5px solid #fff; /* White border around the image */
+}
+
+#testimonials .carousel-inner {
+    text-align: center; /* Center text */
+}
+
+#testimonials .carousel-item img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%; /* Circular image */
+}
+
+.review {
+    font-size: 15px;
+    padding: 10px 10px 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2); /* Add shadow to review */
+}
+
+/* Subscribe Section */
+.subscribe {
+    padding: 50px 30px;
+    background-color: #013f7e; /* Dark blue background */
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.15); /* Add shadow */
+}
+
+.subscribe h3, .subscribe p {
+    color: #fff; /* White text color */
+}
+
+.subscribe .input-group {
+    border-radius: 30px; /* Rounded corners */
+    background: #fff; /* White background */
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .subscribe .input-group {
+        flex-direction: column;
+        align-items: center; /* Center items for mobile view */
+    }
+
+    .subscribe .input-group input {
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .subscribe .input-group button {
+        width: 80%;
+    }
+}
+
+/* Footer Section */
+#footer {
+    margin-top: 80px;
+    padding: 100px;
+    background-color: #efefef; /* Light grey background */
+    color: black; /* Dark blue text */
+}
+
+.footer-logo {
+    width: 150px;
+    margin: 25px 0;
+}
+
+.footer h1 {
+    font-size: 15px;
+    text-align: left;
+    margin: 25px 0;
+}
+
+/* Default Light Theme */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #31353D;
+    --secondary-color: #FCBCB2;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+}
+
+.navbar {
+    background-color: var(--primary-color); /* Primary color for navbar */
+}
+
+.btn {
+    background-color: var(--secondary-color); /* Secondary color for buttons */
+    color: var(--primary-color); /* Primary color for button text */
+    border: none;
+}
+
+.footer-logo {
+    filter: brightness(1); /* Ensure logo is visible in both themes */
+}
+
+/* Dark Theme */
+body.dark-mode {
+    --bg-color: #181818; /* Dark background color */
+    --text-color: #f0f0f0; /* Light text color */
+    --primary-color: #212121; /* Dark primary color */
+    --secondary-color: #fc9e8e; /* Light pink secondary color */
+}
+
+/* Light Mode Styles */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #31353D;
+    color: #FCBCB2;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000; /* Light mode navbar links */
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #FCBCB2; /* Dark mode navbar links */
+}
+
+footer {
+    background-color: #333; /* Dark footer background */
+    color: #fff; /* White footer text */
+}
+
+footer a {
+    color: #FCBCB2; /* Light pink footer links */
+}
+
+.navbar-toggler:focus, 
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.navbar-nav li a:hover {
+    transition: background-color 0.3s ease;
+    color: #FCBCB2 !important;  /* Light pink hover effect */
+}
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+  }
